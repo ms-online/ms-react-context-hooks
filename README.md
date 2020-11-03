@@ -1,4 +1,4 @@
-lesson-5:contextType 获取数据
+lesson-6:consumer 获取数据
 
 #### 官方文档
 
