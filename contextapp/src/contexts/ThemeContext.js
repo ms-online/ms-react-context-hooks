@@ -6,7 +6,7 @@ class ThemeContextProvider extends Component {
     state = { 
         isLightTheme: true,
         light: { bg: '#eee', ui: '#ddd', syntax: '#555' },
-        dark:{bg:'#555', ui:'#333', syntax:'ddd'}
+        dark:{bg:'#555', ui:'#333', syntax:'#ddd'}
      }
     render() { 
         return ( 
