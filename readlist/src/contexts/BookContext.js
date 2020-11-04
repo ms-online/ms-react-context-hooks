@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react'
+import { v4 as uuidv4} from 'uuid'
 
 export const BookContext = createContext();
 
@@ -9,7 +10,7 @@ const BookContextProvider = (props) => {
         { title: '面包树上的女人', author: '张小娴', id: 3 },
     ]);
     const addBook = (title,author) => {
-        setBooks([...books, { title, author}]);
+        setBooks([...books, { title, author, id: uuidv4()}]);
     }
     const removeBook = (id) => {
         setBooks(books.filter(book => book.id !== id));

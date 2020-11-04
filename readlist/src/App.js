@@ -1,3 +1,4 @@
+const { default: BookForm } = require("./components/BookForm")
 const { default: BookList } = require("./components/BookList")
 const { default: Navbar } = require("./components/Navbar")
 const { default: BookContextProvider } = require("./contexts/BookContext")
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <BookContextProvider>
         <Navbar />
-        <BookList/>
+        <BookList />
+        <BookForm/>
      </BookContextProvider>
     </div>
   );
