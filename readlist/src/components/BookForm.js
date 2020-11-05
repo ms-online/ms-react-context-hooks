@@ -2,13 +2,13 @@ import React, { useContext, useState} from 'react'
 import { BookContext } from '../contexts/BookContext'
 
 const BookForm = () => {
-    const { addBook } = useContext(BookContext);
+    const { dispath } = useContext(BookContext);
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addBook(title, author)
+        dispath({type:'ADD_BOOK', book:{title, author}})
         setTitle('')
         setAuthor('')
     }
